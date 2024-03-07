@@ -15,7 +15,7 @@ namespace CMP1903_A1_2324
         {
             // "Random rnd" -> This will generate a random number from 1 to 6.
             Random rnd = new Random();
-            int ReturnValue = rnd.Next(1, 7);
+            int ReturnValue = rnd.Next(1, 8);
             // "return ReturnValue" -> This will return into the console, the number that was randomly generated.
             return ReturnValue;
         }
