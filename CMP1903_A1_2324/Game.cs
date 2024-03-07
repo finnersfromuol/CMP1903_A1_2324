@@ -40,7 +40,7 @@ namespace CMP1903_A1_2324
             // "Die3.roll" -> Dice roll stage 3. The final, last dice roll out of the three.
             Die3.DieValue = Die3.Roll();
             // "result" -> Dice roll stage 3 output. The random number, chosen from 1 to 6. Final dice roll.
-            result = result + Die2.DieValue;
+            result = result + + Die1.DieValue + Die2.DieValue;
             // "Console.WriteLine" -> Outputting the last final dice roll stage 3 into the console output. Also allowing user to press a key to move onto Dice roll stage 3.
             // In the background (not visible to frontend) each value is being totalled up. The next print of code, it will print the total of the 3 dice rolls.
             Console.WriteLine("\nDice Roll 3: " + Die3.DieValue + " Now press a key to view the totalled number from the 3 dice rolls.");
