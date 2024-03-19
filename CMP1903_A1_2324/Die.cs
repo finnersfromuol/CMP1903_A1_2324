@@ -6,18 +6,18 @@ using System.Threading.Tasks;
 
 namespace CMP1903_A1_2324
 {
-    internal class Die
+    public class Die
     {
-        /*
-         * The Die class should contain one property to hold the current die value,
-         * and one method that rolls the die, returns and integer and takes no parameters.
-         */
+        // "DieValue" -> This will hold the value of the dice each time it is randomised and printed into the console. By default, at the start will remain at 0.
+        public int DieValue = 0;
 
-        //Property
-
-
-        //Method
-
-
+        public int Roll()
+        {
+            // "Random rnd" -> This will generate a random number from 1 to 6.
+            Random rnd = new Random();
+            int ReturnValue = rnd.Next(1, 7);
+            // "return ReturnValue" -> This will return into the console, the number that was randomly generated.
+            return ReturnValue;
+        }
     }
 }
